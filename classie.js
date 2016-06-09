@@ -34,14 +34,14 @@ else
   }
   addClass = function(elem, c) 
   {
-    if (!hasClass(elem, c )) 
+    if (!hasClass(elem, c)) 
     {
       elem.className = elem.className + ' ' + c
     }
   }
   removeClass = function(elem, c) 
   {
-    elem.className = elem.className.replace(classReg( c ), ' ')
+    elem.className = elem.className.replace(classReg(c), ' ')
   }
 
 
@@ -67,6 +67,7 @@ let classie =
 }
 
 if (typeof define == 'function'&&define.amd)
+  define( classie );
  
 else 
   window.classie = classie
