@@ -184,7 +184,8 @@ button.btn.btn-primary:hover
 	background-position: center;
 	background-size: cover;
 }
-.testimonial h2 {
+.testimonial h2 
+{
 	font-size: 50px;
 	font-weight: 600;
 	color: #1f7cae;
@@ -328,15 +329,16 @@ footer
 	background: url("../images/to-top2.png") no-repeat 0px 0px;
 	z-index: 99999;
 }
-
+/*GALLARY*/
 .products-content 
 {
+	width: 100%;
+	height: 200px;
 	background: url();
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	height: 200px;
 }
 a.products 
 {
@@ -357,24 +359,10 @@ h1.products, h1.gallery
 {
 	font-size: 50px;
 	font-weight: 600;
+	text-align: center;
 	margin-top: 50px;
 	color: #03A9F4;
 	letter-spacing: 1px;
-}
-#womens-wear h2 
-{
-	padding-top: 50px;
-}
-.main-2 
-{
-	margin-top: 0;
-}
-.main h2 
-{
-	text-align: left;
-	padding-left: 150px;
-	font-size: 45px;
-	background-color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1280px) 
@@ -700,52 +688,15 @@ h2.gallery
 		height: 60px;
 	}
 }
+/*CONTACTS PAGE*/
 
 
-.contact 
-{
-	padding: 100px 0 50px;
-	background-color: #FFFFFF;
-	border-bottom: 2px solid #EEE;
-}
-/.contact h3 
-{
-	padding-bottom: 50px;
-}
-.contact_form input[type='text'] 
-{
-	
-}
-.contact_form textarea 
-{
-	width: 100%;
-	
-}
-form.contact_form 
-{
-	
-}
-.message 
-{
-	margin-bottom: 30px;
-}
-.more_btn 
-{
-	padding: 13px 30px;
-	border: 1px solid #EEE;
-	font-size: 16px;
-	color: #EEE;
-	background-color: #333;
-	text-decoration: none;
-	outline: none;
-	transition: 0.5s all;
-}
-.more_btn:hover 
+/*.more_btn:hover 
 {
 	color: #FFFFFF;
 	background-color: #ee2899;
 	cursor: pointer;
-}
+}*/
 
 @media screen and (max-width:736px) 
 {
