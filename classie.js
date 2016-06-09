@@ -67,7 +67,6 @@ let classie =
 }
 
 if (typeof define == 'function'&&define.amd)
-  define( classie )
  
 else 
   window.classie = classie
