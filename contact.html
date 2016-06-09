@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ODESIGN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script> 
+addEventListener("load", function() 
+{ 
+	setTimeout(hideURLbar, 0) 
+}, false) 
+
+function hideURLbar()
+{
+	window.scrollTo(0,1) 
+} 
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</head>
+<body>
+<header>
+	<section class="header">
+		<nav id="bt-menu" class="bt-menu">
+			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="facebook" title="Facebook"></a></li>
+				<li><a href="#" class="instagram" title="Instagram"></a></li>
+			</ul>
+		</nav>
+	</section>	
+</header>
+<main>
+	<section class="products-content">
+		<a href="index.html" class="products">ODESIGN</a>
+		<p class="products">Each piece of ODesign Jewelry is designed by our team. 
+		We personally follow the process of realization, interacting with artisans and giving the right directions. This personal touch is what sets ODesign jewelry apart from the competition. Hidden within the spirit of each stone lies a philosophy of aethetic choice and defining style.</p>
+	</section>
+	<h1 class="products">CONTACTS</h1>
+	<div class="contact slideanim" id="contact">
+		<div class="container">
+			<form class="contact_form">
+
+				<div class="message">
+					<div class="col-md-6 col-sm-6 grid_6 c1">
+						<input type="text" class="text" value="Name" 
+						placeholder="Name" onfocus="this.value = '';" 
+						onblur="if (this.value == '') {this.value = 'Name';}">
+						
+						<input type="text" class="text" value="Email" 
+						placeholder="Email" onfocus="this.value = '';" 
+						onblur="if (this.value == '') {this.value = 'Email';}">
+						
+						<input type="text" class="text" value="Phone" 
+						placeholder="Phone" onfocus="this.value = '';" 
+						onblur="if (this.value == '') {this.value = 'Phone';}">
+					</div>
+
+					<div class="col-md-6 col-sm-6 grid_6 c1">
+						<textarea placeholder="Message" 
+						onfocus="this.value = '';"
+						onblur="if (this.value == '') 
+						{this.value = 'Message';}"> Message
+						</textarea>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+				<button type="button" class="more_btn" value="Send Message"></button>
+			</form>
+		</div>
+	</div>
+
+	<div class="map slideanim">
+		<h2>Location</h2>
+		<div id="map-canvas"></div>
+		<script>
+			var map,
+			    position = new google.maps.LatLng(49.991409, 36.232417)
+
+			function initialize() 
+			{
+			  var mapOptions = 
+			  {
+			    zoom: 8,
+			    center: position
+			  }
+			  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
+			}
+			google.maps.event.addDomListener(window, 'load', initialize)
+		</script>
+	</div>
+</main>
+<footer>
+	<div class="footer">
+		<section class="footer-grids">
+		<section class="col-md-3 col-sm-3 footer-grid">
+		<section class="contact-subscribe">
+			<h4>NEWSLETTER</h4>
+			<p>Subscribe to our newsletter and we'll inform you about newest products and promotions.</p>
+			
+			<section class="subscribe">
+				<form class="newsletter">
+					<input class="email" type="email" placeholder="email...">
+					<button type="button" class="submit">submit</button>
+				</form>
+			</section>
+		</section>
+		</section>
+		</section>
+
+		<div class="copyright">
+			<p>&copy; 2016 ODESIGN JEWELRY.</p>
+		</div>
+	</section>
+</footer>
+
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/classie.js" defer></script>
+	<script src="js/borderMenu.js" defer></script>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			var defaults = 
+			{
+				containerID: 'toTop', 
+				containerHoverID: 'toTopHover',
+				scrollSpeed: 100,
+				easingType: 'linear'
+			}
+			$().UItoTop(
+				{ 
+					easingType: 'easeOutQuart' 
+				})
+		})
+	</script>
+	<a href="#" id="toTop" style="display: block;"> 
+	<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<script src="js/move-top.js" defer></script>
+	<script src="js/easing.js" defer></script>
+	<script>
+			jQuery(document).ready(function($) 
+			{
+				$(".scroll, .navbar li a").click(function(event)
+				{
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000)
+				})
+			})
+	</script>
+</body>
+</html>
