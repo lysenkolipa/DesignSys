@@ -40,72 +40,43 @@ function hideURLbar()
 </header>
 <main>
 	<section class="products-content">
-		<a href="index.html" class="products">ODESIGN</a>
+		<h1><a href="index.html" class="products">ODESIGN</a></h1>
 		<p class="products">Each piece of ODesign Jewelry is designed by our team. 
 		We personally follow the process of realization, interacting with artisans and giving the right directions. This personal touch is what sets ODesign jewelry apart from the competition. Hidden within the spirit of each stone lies a philosophy of aethetic choice and defining style.</p>
 	</section>
 	<h1 class="products">CONTACTS</h1>
-	<div class="contact slideanim" id="contact">
-		<div class="container">
-			<form class="contact_form">
-
-				<div class="message">
-					<div class="col-md-6 col-sm-6 grid_6 c1">
-						<input type="text" class="text" value="Name" 
-						placeholder="Name" onfocus="this.value = '';" 
-						onblur="if (this.value == '') {this.value = 'Name';}">
-						
-						<input type="text" class="text" value="Email" 
-						placeholder="Email" onfocus="this.value = '';" 
-						onblur="if (this.value == '') {this.value = 'Email';}">
-						
-						<input type="text" class="text" value="Phone" 
-						placeholder="Phone" onfocus="this.value = '';" 
-						onblur="if (this.value == '') {this.value = 'Phone';}">
-					</div>
-
-					<div class="col-md-6 col-sm-6 grid_6 c1">
-						<textarea placeholder="Message" 
-						onfocus="this.value = '';"
-						onblur="if (this.value == '') 
-						{this.value = 'Message';}"> Message
-						</textarea>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-
-				<button type="button" class="more_btn" value="Send Message"></button>
-			</form>
-		</div>
-	</div>
-
-	<div class="map slideanim">
-		<h2>Location</h2>
-		<div id="map-canvas"></div>
-		<script>
-			var map,
-			    position = new google.maps.LatLng(49.991409, 36.232417)
-
-			function initialize() 
-			{
-			  var mapOptions = 
-			  {
-			    zoom: 8,
-			    center: position
-			  }
-			  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
-			}
-			google.maps.event.addDomListener(window, 'load', initialize)
-		</script>
-	</div>
+	<form class="subscribe">
+		<label>Stay informed with our newsletter</label>
+		<input type="text" class="user-mail" placeholder="Enter Your Mail">
+		<button type="button" class="btn btn-subscribe">subscribe</button>
+	</form>
 </main>
 <footer>
 	<div class="footer">
 		<section class="footer-grids">
 		<section class="col-md-3 col-sm-3 footer-grid">
 		<section class="contact-subscribe">
-			<h4>NEWSLETTER</h4>
-			<p>Subscribe to our newsletter and we'll inform you about newest products and promotions.</p>
+			<h4>CONTACT US</h4>
+			<ul>
+				<li><a href="#"><img src="../images/phone.png"></a>
+					<ul>
+						<li>TELEPHONE</li>
+						<li>+380 50 382 72 89</li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="../images/location.png"></a>
+					<ul>
+						<li>ADDRESS</li>
+						<li>121 Berlin, Germany</li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="../images/email.png"></a>
+					<ul>
+						<li>EMAIL</li>
+						<li>odsgn@gmail.com</li>
+					</ul>
+				</li>
+			</ul>
 			
 			<section class="subscribe">
 				<form class="newsletter">
